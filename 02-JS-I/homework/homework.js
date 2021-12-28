@@ -28,21 +28,20 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-    return str 
-  
+  return str 
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-    return x+y;
+  return x+y;
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-   return x-y;
+  return x-y;
 }
 
 function multiplica(x, y) {
@@ -55,14 +54,12 @@ function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   return x/y;
-  
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-
   if (x==y)
   {
     return true ;
@@ -73,14 +70,15 @@ function sonIguales(x, y) {
      return false;
 
   }
-  
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-    return  str1.lenght === str2.lenght;
+  return str1.length === str2.length;
+  
+}
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -115,7 +113,6 @@ function obtenerResto(x, y) {
   // Tu código:
   var resultado=x%y;
   return resultado
-  
 }
 
 function esPar(num) {
@@ -130,7 +127,6 @@ function esPar(num) {
   {
     return false;
   }
-  
 }
 
 function esImpar(num) {
@@ -145,7 +141,6 @@ function esImpar(num) {
   {
     return false;
   }
-  
 }
 
 function elevarAlCuadrado(num) {
@@ -153,7 +148,6 @@ function elevarAlCuadrado(num) {
   // ojo: No es raiz cuadrada!
   // Tu código:
   return Math.pow(num,2)
-  
 }
 
 function elevarAlCubo(num) {
@@ -172,7 +166,6 @@ function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   return Math.round(num)
-  
 }
 
 function redondearHaciaArriba(num) {
@@ -233,16 +226,13 @@ function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   return alto*ancho
-  
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-
   return lado*4
-  
 }
 
 
@@ -256,6 +246,7 @@ function areaDelTriangulo(base, altura){
 
   }
   return AereaTriangulo()
+
 }
 
 
@@ -263,12 +254,19 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  function Convertidor(){
-   return euro*1.20
-
+  function Convertidor()
+  {
+    return euro*1.20
+ 
   }
-  return Convertidor()
+
+  
+   return Convertidor()
+
 }
+
+
+
 
 
 function esVocal(letra){
@@ -293,10 +291,8 @@ function esVocal(letra){
     return "Dato incorrecto"
   }
   
-}
-}
 
-
+}
 // No modificar nada debajo de esta línea
 // --------------------------------
 
