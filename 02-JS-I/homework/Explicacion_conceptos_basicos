@@ -1,0 +1,191 @@
+Explicacion de conceptos basicos en java
+
+______________________________________________________Variables______________________________________________________________________________________
+
+las variables son espacios vacios en la memoria de la computadora para guardar cualquier tipo de dato, ya sea un numero, un nombre o una fecha, etc 
+en programacion se suelen utilizar las variables para guardar datos, representar valores matematicos, etc 
+
+ejemplo:
+
+queremos guardar los datos de una persona , es decir su edad, nombre, apellido y fecha de nacimiento
+para hacerlo en java se usara la siguiente sintaxis 
+
+var Nombre_de_la_variable = Dato;   
+
+con esa sintaxis quedaria asi 
+
+var Nombre="pedro";
+var Apellido="Lezama Carrillo"
+var edad=15;
+var Fecha_Nacimiento= 12/3/05
+
+asi todos esos datos ya estan guardados en esas variables y se pueden cambiar o usar en otro momento
+
+________________________________________________________String_______________________________________________________________________________________
+
+los string son cadenas de texto, es decir, es una serie de caracteres que con las que se pueden formar oraciones
+siempre los strings deben de representarse con comillas ya que el lenguaje entiende que es una cadena de texto, osea un dato y sin las comillas, el lenguaje se confunde y sale un error 
+
+ejemplo
+
+si declaramos una variable asi
+
+var Nombre = yael
+
+saldria un error ya que el lenguaje toma que yael es una variable, y esa variable no existe por lo tanto lanzaria un error 
+
+ahora si declaramos una variable asi 
+
+var Nombre = "yael"
+
+esta ves si estaria bien ya que estan las comillas y el lenguaje de programacion interpreta que lo que esta adentro de las comillas es un dato
+
+_____________________________________________________funciones_______________________________________________________________________________________
+
+las funciones son como un subprograma o un programa chiquito que hace un determinado proceso para llegar a un resultado, el metodo puede ser invocado para que haga el proceso cuantas veces quiera el desarrollador, entonces las funciones sirven para si un proceso se necesita hacer mas de una vez, no sea necesario escribir tanto codigo 
+
+hay dos tipos de funciones, uno con retorno y uno sin retorno
+y ambas funciones pueden recibir parametros
+
+que son los parametros ?
+
+son variables que sirven unicamente para transportar el valor de una variable en el programa general a la funcion, para que asi con los datos que tiene llegar a un resultado, las funciones pueden tener parametros o no, no son obligatorios
+
+sintaxis de funcion que no retorna nada 
+___________________________________________
+Function Nombre_de_la_funcion(Parametros)  |
+{                                          |
+	                                       |
+Codigo                                     |
+                                           |
+}                                          |
+___________________________________________|
+sintaxis que retorna un valor 
+__________________________________________
+Function Nombre_de_la_funcion(Parametros) |
+{                                         |
+	                                      |
+Codigo                                    |
+ return Valor;                            |
+}                                         |
+__________________________________________|
+
+
+ejemplo 
+
+function con retorno con parametros 
+____________________________________
+function Sumar(numero1, numero2)    |
+{                                   |
+	                                |
+var resultado = numero1 + numero2 ; |
+                                    |
+return resultado;                   |
+                                    |
+}                                   | 
+____________________________________|
+
+function sin retorno con parametros 
+____________________________________
+function Sumar(numero1, numero2)    |
+{                                   |
+	                                |
+  resultado = numero1 + numero2 ;   |
+                                    |                  
+                                    |
+}                                   | 
+____________________________________|
+
+function con retorno sin parametros
+______________________________________
+function Sumar()                      |
+{                                     |
+	var numero1 = 4;                  |
+	var numero2 = 4;                  |
+    var resultado = numero1 + numero2 |
+                                      |
+return resultado;                     |
+                                      |
+}                                     | 
+______________________________________|
+
+function sin retorno con parametros 
+____________________________________
+function Sumar()                    |
+{                                   |
+	                                |
+  var Numero1 = 4;                  |
+  var Numero2 = 4;                  |
+                                    |
+  resultado=Numero1 + Numero2 ;     |
+                                    |                  
+                                    |
+}                                   | 
+____________________________________|
+
+
+__________________________________________________Declaraciones______________________________________________________________________________________
+
+yo sinceramente prefiero decirles estructura de control, funciona de la siguiente forma 
+
+una estructura de control permite que si un codigo se debe ejecutar o no, o si el codigo se ejecute tal numero de veces, hay muchos estructuras de control, pero en este caso veremos el if 
+
+la estructura de control if sirve para, si una condicion se cumple, haga algo, y si no se cumpla, haga algo completamente diferente 
+osea es como decidir que camino tomar de 2 caminos diferentes 
+
+sintaxis 
+
+if(Condicion)
+{
+	Codigo1
+}
+else
+{
+	Codigo2
+}
+
+para que sea mas claro lo representare de la siguiente forma 
+
+si(condicion)
+{
+    haz esto
+}
+sino
+{
+	entonces haz esto
+}
+
+
+ejemplo
+
+if(4>5)
+{
+	Console.log('cuatro es mayor que 5')
+}
+else 
+{
+	Console.log('cuatro no es mayor que 5')
+}
+
+en este caso saldria en pantalla 'cuatro no es mayor que 5' ya que es cierto, cuatro jamas sera mayor que 5 
+veamos otro ejemplo
+
+ if(4=4)
+{
+	Console.log('cuatro es igual a 4')
+}
+else 
+{
+	Console.log('cuatro no es igual a 4')
+}
+
+en este caso se mostraria en pantalla 'cuatro es igual a 4' ya que es cierto 
+
+__________________________________________________Valores booleanos________________________________________________________________________________
+
+los valores booleanos solo son dos y esos son true y false, true y false son palabras reservadas, es decir, es parte del lenguaje
+
+ejemplo
+
+var variableBooleana = true 
+
