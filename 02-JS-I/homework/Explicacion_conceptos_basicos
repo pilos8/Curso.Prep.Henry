@@ -123,7 +123,22 @@ function Sumar()                    |
 }                                   | 
 ____________________________________|
 
+Ahora para invocarlas es sencillo, cuando invocas el metodo , hara o ejecutara lo que esta adentro de la funcion
 
+sintaxis 
+
+NombreDelMetodo(Parametros);
+
+Ejemplo
+como ejemplo invocaremos el metodo sumar
+
+sin parametros 
+
+Sumar();
+
+con parametros
+
+Sumar(5,5);
 __________________________________________________Declaraciones______________________________________________________________________________________
 
 yo sinceramente prefiero decirles estructura de control, funciona de la siguiente forma 
