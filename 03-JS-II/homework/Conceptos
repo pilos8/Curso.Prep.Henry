@@ -1,0 +1,99 @@
+Conceptos del for 
+
+Para entender el for primero debes entender que son los bucles 
+
+los bucles es una secuencia de instrucciones de codigo que se repite varias veces hasta que la condicion que le pusimos al bucle sea verdadero
+es decir, aveces en programacion te tocara hacer tareas muy repetitivas y muy largas y es un poco meticuloso y tardado, por eso la funcion 
+de los bucles, los bucles deben un tener una condicion para que el bucle solo se repita las veces que quiera el programador 
+
+___________________________________________________Bucle For_________________________________________________________________________________
+
+El bucle for es un buble que repite el codigo que tiene en su interior las veces que sea necesario, veamos sus sintaxis y elementos del for 
+
+for(Declarar Variable y dandole un valor ; Condicion ; variable++)
+{
+    Codigo a ejecutar
+}
+
+los elementos son la palabra reservada for y el abre y cierre de parentesis, adentro de esos parentesis hay tres partes, la primera es la declaracion 
+de una variable que servira como contador y dandole un valor inicial, despues de eso para separarlo agregale el punto y coma ;, despues de eso viene 
+la condicion, la condicion puede ser algo asi como Variable>=10 , despues de eso, separarlo con punto y coma ; y despues sigue el siguiente sintaxis
+variable++, te preguntaras que hace esa sintaxis, pues lo que hace es que esa variable que declaraste en el for, su valor que tendra se le sumara
+un 1 cada vez que el for se repita para que asi el for se detenga, ahora con todo eso haremos un ejemplo
+
+imaginemos que nos dan la tarea de mostrar en pantalla la tabla del 6, si te das cuenta es muy tardado, hagamoslo de la manera lenta 
+
+Console.log("6 x "+ 1 +" = "+6*1)
+Console.log("6 x "+ 2 +" = "+6*1)
+Console.log("6 x "+ 3 +" = "+6*1)
+Console.log("6 x "+ 4 +" = "+6*1)
+Console.log("6 x "+ 5 +" = "+6*1)
+Console.log("6 x "+ 6 +" = "+6*1)
+Console.log("6 x "+ 7 +" = "+6*1)
+Console.log("6 x "+ 8 +" = "+6*1)
+Console.log("6 x "+ 9 +" = "+6*1)
+Console.log("6 x "+ 10 +" = "+6*1)
+
+ como ves es una tarea repetitiva y algo tedioso, ahora usaremos el bucle For
+ 
+ for(var i=1; i<=10; i++)
+{
+ console.log("6 x "+ i +" = "+6*i)   
+    
+}
+
+con ese simple codigo ya hicimos todo, nos ahorramos mucho codigo y es facil de usar
+_____________________________________________________________________________________________________________________________________________
+
+
+_______________________________Operadores Logicos____________________________________________________________________________________________
+
+imaginemos que tienes un if y necesitas que dos condiciones se cumplan si o si, o que haya dos condiciones y que se ejecute el codigo dentro del if 
+solo si se cumple una condicion, pues parta eso hay sintaxis y son los siguientes 
+
+____________________________________________Operador AND_______________________________________________________________________________________ 
+
+el operador AND o && se utiliza para concatenar o añadir otra condicion, la condicion dara true solamente cuando todas las condiciones se cumplan 
+
+Ejemplo 
+
+"el hierro es duro" && "el hierro es frio" --->devuelve true 
+"el hierro es duro" && "el hierro es muy caliente" --->false 
+
+4>2 && 2<4 --->devuelve true
+
+4 es mayor que dos y dos es menor que 4, es obvio que devuelva un true 
+
+4<2 && 2<4 --->devuelve false
+
+devolvera false ya que 2 si es menor que 4 pero 4 no es menor que 2, no se cumplio una condicion, por lo tanto devuewlve false 
+
+_____________________________________________Operador OR_______________________________________________________________________________
+
+ahora si quieres tener dos condiciones y que si se sumpla una condicion salga true
+
+el operador OR o || se utiliza para concatenar o añadir otra condicion, pero dara tru si alguno de los dos condiciones se cumpla 
+
+ejemplo
+
+"el hierro es duro" && "el hierro es muy caliente" --->true
+
+lanza un true porque el hierro si es duro pero no es caliente, pero se cumplio una condicion, por lo tanto lanza un true
+
+4<2 || 2<4 --->devuelve true
+
+lanza un true ya que 2 si es menor que 4, y ya se cumplio una condicion, por lo tanto es true
+
+Si todas las condiciones no se cumplen dara false
+si todas las condiciones si se cumplen entonces dara true 
+
+_____________________________________________Operador NOT_______________________________________________________________________________
+
+El operador NOT o ! devuelve false si su unico operando se puede convertir a true, de lo contrario, dara true 
+
+Ejemplo 
+
+var Variable1= !true ----> devuelve false 
+var Variable2 = !false ----> devuelve true 
+
+basicamente como que revierte los valores 
