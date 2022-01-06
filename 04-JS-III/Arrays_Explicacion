@@ -1,0 +1,65 @@
+Los Arrays 
+
+Imaginemos que quieres guardar los nombres de alumnos de una escuela, de un grupo en espeficico, los grupos equivalen como 20 o 30 alumnos asi que
+es mucho y para guardar los nombres tendriamos que hacer 20 o 30 variables, es muy tardado y tedioso no lo crees, e ahi la funcion de los arrays
+o arreglos, que son variables que tiene el mismo nombre que representa todos los datos, es decir, en este caso para guardar todos los nombres de 
+los alumnos seria buena idea poner el nombre del array como NombresAlumnos ya que son los nombres de los alumnos, ahora veamos su sintaxis de
+como declarar un array y un ejemplo
+
+Sintaxis 
+
+var NombreDelArray=[elemento,elemento];
+
+es importante que esten esos corchetes ya que con eso le estamos dando a entender el lenguaje que es un array y no otro tipo de variable
+cada dato que se guarde se debe de separar con una coma 
+
+Ejemplo 
+
+var NombresAlumnos=["yael","pedro","luis"]
+
+se pueden guardar distintos tipos de datos en el mismo Array 
+
+Ejemplo
+
+var NombresAlumnos=["yael","pedro","luis",50,1000,true]
+
+podemos guardar string, numerico y booleano, como javascript es un lenguaje muy flexible pues se puede hacer eso, pero no en otros lenguajes como c#
+o visual basic, eso hay que tomarlo en cuenta 
+
+ahora, como podemos acceder a esos datos 
+primero debemos entender que los elementos del array estan en orden numerico, se empieza desde el 0, son como cordenadas basicamente
+
+Ejemplo
+
+var NombresAlumnos=["yael","pedro","luis"]
+                      0       1       2    
+esto quiere decir que "yael" esta en el array NombresAlumnos en la posicion 0, para acceder a "yael" se sigue la siguiente sintaxis 
+
+Sintaxis
+
+NombreDelArray[posicion en la que esta el dato]
+
+con esta sintaxis nos devolvera el dato que elejimos 
+
+Ejemplo 
+
+NombresAlumnos[0]  devuelve "yael"
+
+tambien podemos darle un nuevo valor si queremos de esta forma 
+
+Sintaxis 
+
+NombreDelArray[posicion en la que esta el dato]=nuevoDato
+
+es decir si alguien se quizo cambiar nombre o algo asi, podemos cambiarlo
+
+Ejemplo
+
+NombresAlumnos[0]="Juan"
+
+NombresAlumnos[0] devuelve "Juan"
+
+en resumen , el array es una variable con la que podemos guardar muchos y diferentes datos sin necesidad de tantas variables
+para acceder a esos datos y localizar el dato que queremos se utilizan como cordenadas para acceder el dato que queremos,
+pdemos remplazarles un dato por otro nuevo con lo mismo, la posicion donde esta el dato, cada dato debe de estar separado con una coma
+si declaramos un array vacio, todas sus pocisiones valdran undefined por defecto
