@@ -1,0 +1,114 @@
+Los objetos en programacion 
+
+Los objetos son unidades que tienen propiedades y un comportamiento, es decir, tiene una serie de datos almacenados y funciones que puede realizar
+durante la ejecucion del programa, veamos un ejemplo y la sintaxis 
+
+sintaxis 
+
+var NombreDelObjeto={
+
+
+}
+en este caso estamos creando un objeto vacio, como veran, va primero la palabra reservada var y despues el nombre del objeto, luego de eso 
+se le pone el signo de asignacion o igual y abrimos y cerramos llaves , con esto le estamos dando a entender el lenguaje que es un objeto y no 
+una variable, dentro de esas llaves estan las propiedades que serian como las variables pero solo estan dentro del objeto, es decir 
+un dato que esta adentro de un objeto no se puede usar fuera de ese objeto al menos que se le haga una referencia que ya explicaremos mas adelante 
+pero por lo mientras quedate eso que las propiedades de un objeto no se pueden utilizar sin una referencia del objeto donde esta la propiedad 
+
+ahora para agregar propiedades y metodos al objeto se utiliza la siguiente sintaxis 
+
+sintaxis 
+
+var NombreDelObjeto=
+{
+   Variable1: 1,
+   Variable2: 2,
+   Metodo1: Function(){
+       Codigo a ejecutar
+   },
+}
+
+para declarar una propiedad primero se pone el nombre de la propiedad, en el ejemplo anterior es Variable1, despues del nombre estan los dos puntos que con eso damos a entender que es la propiedad de un objeto, despues de eso el valor por defecto y al final la coma, la coma es importante ponerla al final de una propiedad ya que con la coma separamos cada propiedad del objeto, y para el metodo es casi lo mismo, nombre del metodo que en este 
+caso del ejemplo anterior es Metodo1, los dos puntos y la palabra reservada function y los parentesis, no hace falta ponerle un nombre ya que tiene nombre, solo hay que ponerle function, los parentesis y las llaves 
+
+ahora si veamos un ejemplo 
+
+imaginemos que queremos guardar datos de un perro, serian muchos datos como color, edad, cantidad de patas, raza, etc, para llevar todo en orden seria mejor hacer un objeto, max sera el nombre del perro 
+
+var Max=
+{
+    Color:rojo,
+    Raza:pastor aleman,
+    Patas:4,
+    edad:4,
+    Ladrar:function()
+    {
+       Console.log(guau) 
+    }
+}
+como vemos aqui, esta el objeto max con las propiedades, como color, raza, edad y etc, y asi guardariamos los datos ya sea de una persona, un perro, etc
+
+__________________________________________________Tipos de Referencias_____________________________________________________________________________
+
+como ya mencionamos anteriormente, para acceder a las propiedades del objeto debemos hacer una referencia del objeto donde esta la propiedad,hay dos formas de hacerlo
+
+-----------------------------------------------------Bracket notation------------------------------------------------------------------------------
+
+los brackets notation es una forma de hacer referencia al objeto, su sintaxis es la siguiente 
+
+sintaxis para acceder a una propiedad con bracket notation 
+
+NombreDelObjeto[NombreDeLaPropiedad]
+
+como ya vieron los elementos son esos, primero el nombre del objeto, los brackets y adentro de los brackets el nombre de la propiedad, y asi ya estariamos accediendo al valor de esa propiedad
+
+ahora veamos con un metodo 
+
+NombreDelObjeto[NombreDelMetodo]();
+
+es basicamente lo mismo que una propiedad pero, lo que estamos haciendo es acceder al metodo y invocarlo, ya que sin los parentesis solo nos devuelve la funcion, en ningun momento lo llamamos, en cambio con los parentesis lo que estamos haciendo es invocar el metodo,ahora hagamos un ejemplo con el objeto del ejemplo del perro 
+
+Acceder a la propiedad color y el metodo ladrar
+
+Max[color];
+
+Max[Ladrar]();  guau
+ 
+tambien podemos agregarle nuevos valores a las propiedades de esta forma
+
+Max[color]=Blanco;
+
+y asi en ves de rojo, ahora es blanco
+
+los metodos no podemos modificarlos pero si agregar si seguimos la siguiente sintaxis 
+
+sintaxis 
+
+NombreDelObjeto[NuevoMetodo]=function()
+{
+     codigo a ejecutar
+}
+
+ahora veamos un ejemplo con lo del perro
+
+Max(Correr)=Function()
+{
+    Corre
+}
+
+asi ya creamos un metodo nuevo que podemos usarlo
+
+-----------------------------------------------------Dot notation------------------------------------------------------------------------------------
+
+personalmente prefiero este ya que me e acostumbrado a usar este tipo de referencia, esta referencia es similar, solo que solamente en ves de brackets, solo es un punto, sip, miremos su sintaxis 
+
+NombreDelMetodo.NombreDelaPropiedad;
+
+NombreDelMetodo.NombreDelMetodo();
+
+como ven solo cambia el punto, solo que habra momentos en los que afuerza tendremos que utilizar el bracket notation asi que es importante saber usar los dos.
+
+
+
+
+
