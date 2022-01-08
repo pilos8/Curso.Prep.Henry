@@ -108,7 +108,30 @@ NombreDelMetodo.NombreDelMetodo();
 
 como ven solo cambia el punto, solo que habra momentos en los que afuerza tendremos que utilizar el bracket notation asi que es importante saber usar los dos.
 
+_____________________________________________________Bucle For in______________________________________________________________________________
 
+el bucle for in es similar que al bucle for normal, solamente que cambia su sintaxis
 
+sintaxis 
 
+for(var NombreDeLaVariable in NombreDelArrayOObjeto)
+{
+    codigo a ejecutar
+}
 
+basicamente con lo que estamos haciendo en los parentesis es declarar una variable y recorrer todos los elementos que hay en el objeto o array que esta despues del in, veamos un ejemplo para que lo entiendas
+
+declaramos un array 
+
+var Array=['yael','jorge','pedro']
+
+for(var i in Array)
+{
+    Console.log(i)
+}
+
+yael
+jorge
+pedro
+
+osea basicamente hace lo mismo, solamente que es diferente sintaxis en los parentesis 
