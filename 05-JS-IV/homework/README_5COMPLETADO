@@ -28,7 +28,8 @@ var NombreDelObjeto=
    },
 }
 
-para declarar una propiedad primero se pone el nombre de la propiedad, en el ejemplo anterior es Variable1, despues del nombre estan los dos puntos que con eso damos a entender que es la propiedad de un objeto, despues de eso el valor por defecto y al final la coma, la coma es importante ponerla al final de una propiedad ya que con la coma separamos cada propiedad del objeto, y para el metodo es casi lo mismo, nombre del metodo que en este 
+para declarar una propiedad primero se pone el nombre de la propiedad, en el ejemplo anterior es Variable1, despues del nombre estan los dos puntos que con eso damos a entender que es la propiedad de un objeto, despues de eso el valor por defecto y al final la coma,
+la coma es importante ponerla al final de una propiedad ya que con la coma separamos cada propiedad del objeto, y para el metodo es casi lo mismo, nombre del metodo que en este 
 caso del ejemplo anterior es Metodo1, los dos puntos y la palabra reservada function y los parentesis, no hace falta ponerle un nombre ya que tiene nombre, solo hay que ponerle function, los parentesis y las llaves 
 
 ahora si veamos un ejemplo 
