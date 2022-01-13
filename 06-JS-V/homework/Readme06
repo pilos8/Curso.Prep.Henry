@@ -1,0 +1,100 @@
+------------------------------------------------------Clases y objetos--------------------------------------------------------------------------
+
+las clases son como plantillas para crear objetos, ya vimos en el homework pasado que son los objetos, los objetos son variables con propiedades
+y metodos y que solo se puedan acceder a ellas si hay una referencia del objeto, ahora lo que vimos son objetos literales, ahora veamos como se 
+crea un objeto por medio de una clase o constructor
+
+Pero que son los constructores?
+
+primero hay que entender que las clases son como el molde de los objetos, en las clases estan las propiedades y los metodos que el objeto tendra
+un ejemplo
+
+imaginemos que queremos hacer una clase perro, que tiene un perro generalmente, tiene 4 patas, una cola, comen croquetas, raza, etc
+hagamoslo de la forma objetos literales 
+
+un perro llamado max 
+
+var max=
+{
+    raza:"pastor aleman",
+    color:"cafe",
+    CantidadDePatas:4,
+    IsAgressive=false
+    Ladrar=function()
+    {
+        return "guau"
+    }
+}
+
+ya almacenamos los datos de un perro no, todo esta bien pero que pasa si nos piden almacenar 10 o 100 perros, es mucho, ahora haremos una clase 
+para que con esa clase se puedan crear varios objetos, hay de diferentes formas y veremos algunas de ellas 
+
+esta la forma de constructor, un constructor es un metodo que inicializa un objeto y a las propiedades del objeto les da un valor por defecto,
+veamos su sintaxis
+
+
+function NombreDeLaClase()=
+{
+    propiedad1,
+    propiedad2,
+    metodo=function()
+    {
+        codigo a ejecutar
+    }
+}
+
+se que este tema puede ser algo complejo asi que repasemos un poco sobre los objetos, un objeto es como una unidad, o para que lo entiendas mejor
+es como un tipo de variable que tiene un comportamiento, un estado, propiedades y metodos, 
+
+las propiedades del objeto son las caracteristicas del objeto ya sea color, etc 
+los metodos es lo que es capaz de hacer el objeto, por ejemplo sumar dos numeros o reproducir un sonido, etc 
+
+ahora en el ejemplo anterior seria la sintaxis de un constructor, basicamente es como una clase y constructor al mismo tiempo, un constructor es 
+una metodo que NO retorna nada, la funcion de un constructor es inicializar el objeto y prepararla por asi decirlo para que este lista,
+adentro del constructor deben estar todas las propiedades y metodos que quieras tener, por ejemplo sigamos con lo del perro
+
+let Perro=function(raza,color,CantidadDePatas,IsAgressive,nombre)
+{
+    this.Raza=raza, <-- lo que estamos haciendo aqui es de la propiedad Raza del constructor Perro tendra el valor que tiene el parametro raza 
+    this.color=color,
+    this.CantidadDePatas=CantidadDePatas,
+    this.IsAgressive=IsAgressive,
+    this.Nombre=nombre,
+        Ladrar=function()
+    {
+        return "guau"
+    }
+}
+
+osea, el constructor es un metodo que inicializa los objetos y le puedes pasar parametros ya que es un metodo, pueden ser los datos necesarios
+para crear el objeto, ya tenemos nuestra primera clase por asi decirlo, asi que veamos como crear un objeto con ese constructor 
+
+var NombreDelObjeto= new NombreDeLaClase();
+
+esa es su sintaxis, como podemos ver esta la palabra reservada new, lo que hace la palabra new es resevar un espacio en la memoria que devuelve
+una referencia que se guarda en la variable que creamos, veamos un ejemplo para entenderlo mejor, imaginemos que haremos un objeto del 
+constructor Perro, asi seria
+
+
+var Perro1=new Perro("Pitbull","cafe",4,false,"thomas");
+
+como ves, creamos una variable llamado perro1, que es igual a la referencia del constructor Perro,entonces lo que esta 
+pasando es,que el objeto ya que tiene almacenado esa referencia del constructor Perro, significa que ese objeto ya tiene las propiedades del 
+la clase pero con los datos del perro que le pasamos por parametros, veamos algo 
+
+ya con eso el perro1 ya deberia tener nombre y color 
+
+Console.log(perro1.Nombre) --> thomas
+
+recuerdan en la explicacion anterior, que para acceder a las propiedades del los objetos tienes que tener una referencia, pues perro1 ya tiene esa
+referencia, por lo tanto ya puede acceder a esas propiedades con los datos que le dimos al constructor por parametro
+
+
+--------------------------------------------------prototype--------------------------------------------------------------------------------------
+
+el prototype es dificil de explicar pero es basicamente es un mecanismo que en cual todos los objetos de javascript heredan caracteristicas entre si
+por ejemplo, una variable de un string su prototype es String, string es un objeto que tiene metodos y propiedades, eso quiere decir que
+la variable que tiene un string, automaticamente como que hereda todos las propiedades y metodos del objeto string a la variable string 
+
+es curioso ya que por ejemplo, el .lenght es un metodo del string, pero que podemos usarlo a una variable string ya que ya hay una referencia por 
+defecto depende del tipo de dato.
