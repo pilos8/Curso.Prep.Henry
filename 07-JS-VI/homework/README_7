@@ -1,0 +1,54 @@
+Funciones callback 
+
+bueno, sabias que podemos pasar como parametro una funcion a otra funcion y se puede ejecutar dentro de la funcion, y tambien puede devolver otra funcion , si, puede que se esto sea algo dificil de entender pero te explico 
+
+los callbacks son metodos o funciones como lo quieras llamar tu, que se ejecuta despues de que otra funcion termine de ejecutarse, es decir,
+las funciones pueden acpetar como parametros otra funciones, y tambien pueden devolver otras funciones, veamos un ejemplo para entenderlo
+
+
+crearemos una funcion que devuelva un saludo 
+
+function saludar(nombre) =========> creacion de una funcion llamado saludar que requiere de parametro un nombre
+{
+  Console.log("hola"+nombre) ========>lo que hace el metodo es imprimir en consola un saludo
+}
+
+
+function crearSaludo(callback) ================> creacion de una funcion que recibe como parametro un callback osea una funcion 
+{
+	var nombre=prompt("por favor ingresa tu nombre") ======> lo que el usuario introduzca se guardara en la variable nombre
+	callback(nombre); ========> se ejecuta la funcion con la variable nombre
+}
+
+crearSaludo(saludar); =================> lo que estamos haciendo es, llamar al metodo crearSaludo pero como parametro le mandamos la funcion saludar
+
+por lo la funcion saludar es un callback ya que, llamamos la funcion saludar dentro de la funcion crearSaludo, eso es un callback 
+
+
+ahora otro ejemplo
+
+por si no lo sabias hay unos metodos que le pertenecen al objeto array que se llama map, filter y reduce, solo veremos el metodo map y solo lo veremos porque es un metodo que requiere de una funcion
+
+ejemplo, queremos que todos los elementos numericos de un array se multipliquen por 2, lo que tenemos que hacer es lo siguiente 
+
+1.-creamos el array :
+
+var Array=[1,2,3,4,5,6,7,8,9,10];
+
+2.-creamos el metodo que recibira por parametro:
+
+ var proceso=function(element) return element*2;
+
+3.-declaramos un nuevo array vacio donde se almacenera todos los numeros multiplicados 
+
+var nuevoArray=[];
+
+4.-el valor del nuevo array sera igual a lo que devuelve la funcion map 
+
+nuevoArray=Array.map(proceso);
+
+
+por si acaso no entendiste el paso 2, deja te explico 
+lo que estamos haciendo es una funcion que acepta por parametros una variable llamado element, por si no lo sabes, la variable element se guarda en el numero que esta en el array, es decir, lo que hace el metodo map es recorrer el array sin necesidad de un for,y devolver un array nuevo con los valores nuevos que hizo la funcion que le pasamos por parametros , la variable element es donde se guarda el valor que esta en el array, se multiplica por 2 y lo guarda en el nuevo array
+
+lo se es algo confuso pero lo que debes de entender es, que un callback es una funcion que es ejecutado en otra funcion , para llegar a un resultado, el resultado puede ser un array, string, numerico o tambien otra funcion... 
