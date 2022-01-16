@@ -1,0 +1,34 @@
+h1{
+    color:black;
+    background-color:yellow;
+}
+
+img{
+    width: 400px;
+}
+
+.divClass{
+    width: 500px;
+    bottom: 600px;
+    background-color:yellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+#spanId{
+font-size: 18px;
+margin: 50px;
+color: black;
+}
+
+#thirdDiv{
+    padding: 50px;
+    border: 20px;
+    border-color:orange;
+    border-style:solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html{
+    background-image:url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/01/145185-cual-es-mejor-lenguaje-programacion.jpg");
+}
